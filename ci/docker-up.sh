@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 cd $(dirname $0)
 cd ../
-
+# new version
 mkdir -p $HOME/.cache/yarn
 mkdir -p $HOME/.nuget
 

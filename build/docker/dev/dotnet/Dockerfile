@@ -1,8 +1,8 @@
 FROM microsoft/dotnet:2.0.0-sdk
 
 # add docker user and setup folders
-RUN addgroup --gid 1000 docker && \
-    adduser --uid 1000 --ingroup docker --home /home/docker --shell /bin/sh --disabled-password --gecos "" docker && \
+RUN addgroup --gid 999 docker && \
+    adduser --uid 2002 --ingroup docker --home /home/docker --shell /bin/sh --disabled-password --gecos "" docker && \
     mkdir -p /dotnet && \
     chown -R docker:docker /dotnet
 

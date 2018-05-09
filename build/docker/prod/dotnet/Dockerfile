@@ -1,8 +1,8 @@
 FROM microsoft/aspnetcore:2.0.4-stretch
 
 # add docker user, group, and setup directories
-RUN addgroup --gid 1000 docker && \
-    adduser --uid 1000 --ingroup docker --home /home/docker --shell /bin/sh --disabled-password --gecos "" docker && \
+RUN addgroup --gid 999 docker && \
+    adduser --uid 2002 --ingroup docker --home /home/docker --shell /bin/sh --disabled-password --gecos "" docker && \
     mkdir -p /dotnet/App
 
 # set pwd, ports, command
